@@ -65,9 +65,14 @@
                         <configuration>
                             <rules>
                                 <rule>
+                                    <element>CLASS</element>
+                                    <excludes>
+                                        <exclude>*test</exclude>
+                                        <exclude>ru.netology.domain.Movie</exclude>
+                                    </excludes>
                                     <limits>
                                         <limit>
-                                            <counter>INSTRUCTION</counter>
+                                            <counter>BRANCH</counter>
                                             <value>COVEREDRATIO</value>
                                             <minimum>100%</minimum>
                                         </limit>
